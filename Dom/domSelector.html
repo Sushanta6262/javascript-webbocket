@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today we learned DOM</title>
+    <style>
+        body{
+            color:white;
+        }
+    </style>
+</head>
+<body style="background-color: black">
+    <!-- <div>
+    <h1 id="title" class ="heading">Today we have learned the Dom selector properties and types <span style="display: none;">gift is a good college</span></h1>
+    <p> Those who are not present in cricket ground they have penalty of 1k </p>
+    </div> -->
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednessday</div>
+        <div class=" day">thursday</div>
+    </div>
+</body>
+<script>
+    const parent=document.querySelector('.parent')
+    for(let i=0;i<parent.children.length;i++)
+    {
+        console.log(parent.children[i].innerHtml);
+    }
+</script>
+</html>
