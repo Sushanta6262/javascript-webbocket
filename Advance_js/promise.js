@@ -58,22 +58,31 @@
 // var p5 = p4.then (function(data){
 //     console.log(data);
 // })
-const promiseEx3 = new  Promise(function(res,rej){
-    setTimeout(function(){
-        let error = true
-        if(!error){
-            res({username: "pratush",password : "1234"})
-        }
-        else{
-            rej('Error: Somthing went wrong')
-        }
-    },2000)
-})
-promiseEx3.then((user)=>{
-    console.log(user);
-    return user.username
-}).then((username)=>{
-    console.log(username);
-}).catch(function(error){
-    console.log(error);
-})
+// const promiseEx3 = new  Promise(function(res,rej){
+//     setTimeout(function(){
+//         let error = true
+//         if(!error){
+//             res({username: "pratush",password : "1234"})
+//         }
+//         else{
+//             rej('Error: Somthing went wrong')
+//         }
+//     },2000)
+// })
+// // promiseEx3.then((user)=>{
+// //     console.log(user);
+// //     return user.username
+// // }).then((username)=>{
+// //     console.log(username);
+// // }).catch(function(error){
+// //     console.log(error);
+// // })
+// async function NewpromiseEx3(){
+//     try{
+//         const response = await promiseEx3
+//     console.log(response);
+//     } catch (error){
+//         console.log(error);
+//     }
+// }
+// NewpromiseEx3();
